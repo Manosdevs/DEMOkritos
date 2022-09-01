@@ -1,0 +1,21 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+/* Colors: */
+$clr-black: #181a1f;
+$clr-orange: #ff6c2c;
+$clr-light: #ffffff;
+$font-stack: open-sans, sans-serif;
+
+.logo {
+	width: 186px;
+	height: 19px;
+}
+
+.nav-list {
+	li {
+		color: $clr-black;
+		font: normal normal bold 18px/29px $font-stack;
+		text-transform: capitalize;
+		letter-spacing: -0.09px;
+	}
+}
