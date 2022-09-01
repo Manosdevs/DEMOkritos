@@ -12848,15 +12848,109 @@ fieldset:disabled .btn {
 }
 
 /* Colors: */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
 .logo {
   width: 186px;
   height: 19px;
+}
+
+#Home {
+  height: 174px;
+}
+
+.nav-list ul {
+  height: 24px;
 }
 
 .nav-list li {
   color: #181a1f;
   font: normal normal bold 18px/29px open-sans, sans-serif;
   text-transform: capitalize;
-  letter-spacing: -0.09px;
+  text-align: left;
+  margin-left: 20px;
+  height: 24px;
 }
+
+#carousel {
+  margin: 0 auto 56px auto;
+}
+
+.carousel-item > img {
+  margin: auto;
+  height: 45rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.9;
+}
+
+.carousel-control-prev {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 3.5%;
+}
+
+.carousel-control-next {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 3.5%;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 15%;
+  top: 40%;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+.carousel-caption h5, .carousel-caption .h5 {
+  font: normal normal normal 25px/90px open-sans, sans-serif;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  opacity: 0.75;
+  padding: 0;
+  margin: 0;
+  height: 34px;
+}
+
+.carousel-caption p {
+  font: normal normal normal 45px/90px open-sans, sans-serif;
+  text-transform: capitalize;
+  opacity: 1;
+  color: #ffffff;
+  margin-bottom: 0;
+  padding-top: 7px;
+  height: 61px;
+}
+
+.carousel-caption button {
+  background: #ff6c2c 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  color: #ffffff;
+  font: normal normal bold 20px/98px open-sans, sans-serif;
+  width: 301px;
+  height: 92px;
+  text-align: center;
+  padding: 0;
+  border: 1px solid #ff6c2c;
+  margin-top: 90px;
+}
+
+/* .car-img {
+	
+}
+ */
 /*# sourceMappingURL=style.css.map */

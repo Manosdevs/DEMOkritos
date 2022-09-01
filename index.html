@@ -9,22 +9,140 @@
 		<link rel="stylesheet" href="https://use.typekit.net/rfb8yzk.css" />
 	</head>
 	<body>
-		<main class="container-lg">
-			<div class="row justify-content-between mt-84 mb-84" id="Home">
-				<div class="col-2">
-					<h1>
-						<img class="logo" src="./assets/desktop/Group 158.png" />
-					</h1>
-				</div>
-				<div class="col-4">
-					<ul
-						class="list-unstyled text-dark d-flex justify-content-between fw-bold lh-base nav-list"
+		<main class="container-fluid no-padding">
+			<div class="container-lg">
+				<nav class="row align-items-center justify-content-between" id="Home">
+					<div class="col-2">
+						<h1>
+							<img
+								class="logo"
+								src="./assets/desktop/Group 158.png"
+								alt="logo"
+							/>
+						</h1>
+					</div>
+					<div class="col-4 justify-content-center nav-list">
+						<ul class="list-unstyled d-flex">
+							<li>Home</li>
+							<li>About Us</li>
+							<li>Classes</li>
+							<li>Contact</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<section id="carousel" class="row w-100">
+				<div
+					id="carouselMain"
+					class="carousel slide no-padding"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselMain"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselMain"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselMain"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="4000">
+							<img
+								src="/assets/desktop/Group 169.png"
+								class="d-block w-100"
+								alt="carouselcity1"
+								id="carouselcity1"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="carousel-head text-nowrap col-3">
+									BUYING A DOMAIN NAME
+								</h5>
+								<p class="carousel-par col-9">
+									Each name comes with the .Com Address
+								</p>
+								<button class="btn-carousel col-3">Get Started</button>
+							</div>
+						</div>
+						<div class="carousel-item" data-bs-interval="5000">
+							<img
+								src="/assets/desktop/Group 169.png"
+								class="d-block w-100"
+								alt="carouselcity2"
+								id="carouselcity2"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="carousel-head text-nowrap col-3">
+									BUYING A DOMAIN NAME
+								</h5>
+								<p class="carousel-par col-9">
+									Each name comes with the .Com Address
+								</p>
+								<button class="btn-carousel col-3">Get Started</button>
+							</div>
+						</div>
+						<div class="carousel-item" data-bs-interval="5000">
+							<img
+								src="/assets/desktop/Group 169.png"
+								class="d-block w-100"
+								alt="carouselcity3"
+								id="carouselcity3"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="carousel-head text-nowrap col-3">
+									BUYING A DOMAIN NAME
+								</h5>
+								<p class="carousel-par col-9">
+									Each name comes with the .Com Address
+								</p>
+								<button class="btn-carousel col-3">Get Started</button>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselMain"
+						data-bs-slide="prev"
 					>
-						<li class="text-start">Home</li>
-						<li class="text-start">About Us</li>
-						<li class="text-start">Classes</li>
-						<li class="text-start">Contact</li>
-					</ul>
+						<img src="./assets/desktop/chevron-left.png" />
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselMain"
+						data-bs-slide="next"
+					>
+						<img src="./assets/desktop/chevron-left-1.png" aria-hidden="true" />
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</section>
+			<div class="container-lg">
+				<div class="row justify-content-between">
+					<div class="col-12 col-md-4 position-relative">
+						<img src="./assets/desktop/Group 151.png " />
+					</div>
+					<div class="col-12 col-md-4 position-relative">
+						<img src="./assets/desktop/Group 152.png" />
+					</div>
+					<div class="col-12 col-md-4 position-relative">
+						<img src="./assets/desktop/Group 153.png" />
+					</div>
 				</div>
 			</div>
 		</main>
