@@ -13,6 +13,7 @@ ul {
 
 .no-padding {
 	padding: 0 !important;
+	overflow-x: hidden;
 }
 
 .logo {
@@ -39,8 +40,12 @@ ul {
 	}
 }
 
+////////////////////////////////////////////////////////////////////////////
+/////////////////////       #CAROUSEL            ////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
 #carousel {
-	margin: 0 auto 56px auto;
+	margin: 0 auto 40px auto;
 }
 
 .carousel-item > img {
@@ -63,50 +68,121 @@ ul {
 }
 
 .carousel-caption {
-	position: absolute;
-
 	left: (100% - $carousel-caption-width) * 0.5;
 	top: 40%;
 	padding-top: 0;
 	padding-bottom: 0;
+	position: absolute;
+	max-height: 45rem;
 
 	text-align: left;
 
 	h5 {
-		font: normal normal normal 25px/90px $font-stack;
+		font: normal normal normal 1.5rem/5.5rem $font-stack;
 		letter-spacing: 0.5px;
 		color: $clr-light;
 		opacity: 0.75;
 		padding: 0;
 		margin: 0;
-		height: 34px;
+		height: 2rem;
 	}
 
 	p {
-		font: normal normal normal 45px/90px $font-stack;
+		font: normal normal normal 2.8rem/5.6rem $font-stack;
 		text-transform: capitalize;
 		opacity: 1;
 		color: $clr-light;
-		margin-bottom: 0;
-		padding-top: 7px;
-		height: 61px;
+
+		padding-top: 0.5rem;
+		height: 3.8rem;
+		width: fit-content;
 	}
 
 	button {
 		background: $clr-orange 0% 0% no-repeat padding-box;
-		border-radius: 10px;
+		border-radius: 0.6rem;
 		color: $clr-light;
-		font: normal normal bold 20px/98px $font-stack;
+		font: normal normal bold 1.25rem/1.25rem $font-stack;
 		width: 301px;
 		height: 92px;
 		text-align: center;
-		padding: 0;
+		margin-top: 5.5rem;
+		position: relative;
+
 		border: 1px solid $clr-orange;
-		margin-top: 90px;
 	}
 }
 
-/* .car-img {
-	
+////////////////////////////////////////////////////////////////////////////
+/////////////////////       #RECTANGLES            ////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+.rectangle-section {
+	margin-bottom: 5rem;
 }
- */
+
+.rectangle {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	height: 283px;
+	width: 388px;
+	margin-bottom: 1rem;
+}
+
+.rectangle-1 {
+	@extend .rectangle;
+
+	background: transparent url('/assets/desktop/Group\ 151.png') 0% 0% no-repeat
+		padding-box;
+}
+
+.rectangle-2 {
+	@extend .rectangle;
+
+	background-image: url('/assets/desktop/Group\ 152.png');
+}
+.rectangle-3 {
+	@extend .rectangle;
+	background-image: url('/assets/desktop/Group\ 153.png');
+}
+
+.rectangle-cap {
+	color: $clr-light;
+	margin-bottom: 2.5rem;
+
+	h5 {
+		font: normal normal normal 1.5rem/1.5rem $font-stack;
+	}
+
+	h6 {
+		font: normal normal normal 1.1rem/1.5rem $font-stack;
+	}
+
+	button {
+		background: #7c7c79 0% 0% no-repeat padding-box;
+		color: $clr-light;
+		width: 137px;
+		height: 39px;
+		border: 1px solid #7c7c79;
+		margin-top: 2rem;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+/////////////////////       #ABOUT US            ////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+.about-article {
+	width: fit-content;
+	font: normal normal bold 1rem/1.5rem $font-stack;
+	letter-spacing: 6px;
+	color: #292f39;
+}
+
+.about-images {
+	img {
+		width: 380px;
+		height: 440px;
+	}
+}
