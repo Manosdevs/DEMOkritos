@@ -11617,6 +11617,11 @@ main {
 
 .rectangle-section {
   margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
+.rect-row {
+  margin: 0 auto;
 }
 
 .rectangle, .rectangle-1, .rectangle-2, .rectangle-3 {
@@ -11630,8 +11635,14 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   height: 283px;
-  width: 388px;
+  width: 100%;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .rectangle, .rectangle-1, .rectangle-2, .rectangle-3 {
+    margin: 1rem;
+  }
 }
 
 .rectangle-1 {
@@ -11670,10 +11681,11 @@ main {
 
 .article-wrapper {
   margin-top: 1rem;
+  padding: 0 2.25rem 0 2.25rem;
 }
 
-.article-wrapper button {
-  margin-top: 2.5rem;
+.read-more {
+  margin-top: 2.25rem;
   width: 15rem;
   height: 4.5rem;
   background: #ff6c2c 0% 0% no-repeat padding-box;
@@ -11699,7 +11711,7 @@ main {
 }
 
 .about-article h2, .about-article .h2 {
-  font: normal normal normal 2.5rem/2.5rem open-sans, sans-serif;
+  font: normal normal normal 1.5rem/1.5rem open-sans, sans-serif;
   letter-spacing: 0px;
   padding: 1rem 0;
 }
@@ -11718,28 +11730,32 @@ main {
 }
 
 .about-images {
-  height: calc((440px * 2) + 54px);
+  height: calc((363px * 2) + 54px);
+  padding: 0px 12px;
 }
 
 .about-images img {
-  width: 380px;
-  height: 440px;
+  width: 317px;
+  height: 363px;
 }
 
 .classes {
-  margin-top: 6.25rem;
+  margin-top: 3rem;
   margin-bottom: 6rem;
+  background: #222224 0% 0% no-repeat padding-box;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
 }
 
 .classes header {
-  height: 28rem;
-  background: #222224 0% 0% no-repeat padding-box;
+  overflow-y: hidden;
 }
 
 .classes header h3, .classes header .h3 {
-  font: normal normal normal 3.8rem/1.5rem open-sans, sans-serif;
+  font: normal normal normal 3rem/1.5rem open-sans, sans-serif;
   color: #ffffff;
-  height: 5rem;
+  height: 4rem;
+  margin-top: 3rem;
 }
 
 .classes header .line-orange-hor {
@@ -11793,7 +11809,7 @@ main {
   height: 25%;
   opacity: 1;
   color: #ffffff;
-  font: normal normal normal 3.5rem/1.5rem open-sans, sans-serif;
+  font: normal normal normal 1.5rem/1.5rem open-sans, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11820,12 +11836,125 @@ main {
 
 .teams h5, .teams .h5 {
   color: #181a1f;
-  font: normal normal normal 5.75rem/1.5rem open-sans, sans-serif;
+  font: normal normal normal 2.8rem/1.5rem open-sans, sans-serif;
   letter-spacing: 0;
-  height: 5rem;
+  height: 4rem;
 }
 
 .teams .line-orange, .teams .about-article .line-orange-hor, .about-article .teams .line-orange-hor, .teams .classes header .line-orange-hor, .classes header .teams .line-orange-hor {
-  width: 15%;
+  width: 25%;
+  margin: 0 auto 1.5rem auto;
+}
+
+.teams p {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 3rem;
+  font-family: open-sans, sans-serif;
+}
+
+.contact {
+  padding-top: 4rem;
+  background-color: #181a1f;
+  padding-bottom: 6.5rem;
+}
+
+.contact h5, .contact .h5 {
+  color: #ffffff;
+  font: normal normal normal 2.8rem/1.5rem open-sans, sans-serif;
+  letter-spacing: 0;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.contact .line-orange, .contact .about-article .line-orange-hor, .about-article .contact .line-orange-hor, .contact .classes header .line-orange-hor, .classes header .contact .line-orange-hor {
+  width: 33%;
+  margin: 1rem auto;
+}
+
+.contact p {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 3rem;
+  font-family: open-sans, sans-serif;
+}
+
+.contact input {
+  border: 1px solid #ff6c2c;
+  border-radius: 2px;
+  font: normal normal normal 1.25rem/1.5rem open-sans, sans-serif;
+  color: #ffffff;
+  background-color: #181a1f;
+  height: 4rem;
+  width: 100%;
+}
+
+.contact input::-webkit-input-placeholder,
+.contact textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.contact input:-ms-input-placeholder,
+.contact textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact input::-ms-input-placeholder,
+.contact textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #ffffff;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  background-color: #181a1f;
+  color: #ffffff;
+}
+
+.contact textarea {
+  border: 1px solid #ff6c2c;
+  border-radius: 2px;
+  font: normal normal normal 1.25rem/1.5rem open-sans, sans-serif;
+  color: #ffffff;
+  background-color: #181a1f;
+  min-height: 8.25rem;
+  margin-top: 1.25rem;
+}
+
+.contact button {
+  height: 4rem;
+  background: #ff6c2c;
+  border: 1px solid #ff6c2c;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.faq {
+  padding-top: 3rem;
+}
+
+.faq h5, .faq .h5 {
+  color: #181a1f;
+  font: normal normal normal 2.8rem/1.5rem open-sans, sans-serif;
+  letter-spacing: 0;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.faq .line-orange, .faq .about-article .line-orange-hor, .about-article .faq .line-orange-hor, .faq .classes header .line-orange-hor, .classes header .faq .line-orange-hor {
+  width: 25%;
+  margin: 1rem auto;
+}
+
+.accordion-button {
+  background-color: #ffffff;
+  border: 1px solid #ff6c2c;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

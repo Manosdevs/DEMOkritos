@@ -135,6 +135,11 @@ main {
 
 .rectangle-section {
 	margin-bottom: 5rem;
+	margin-top: 3rem;
+}
+
+.rect-row {
+	margin: 0 auto;
 }
 
 .rectangle {
@@ -142,8 +147,14 @@ main {
 	align-items: flex-end;
 	justify-content: center;
 	height: 283px;
-	width: 388px;
+	width: 100%;
 	margin-bottom: 1rem;
+}
+
+@media (min-width: 40rem) {
+	.rectangle {
+		margin: 1rem;
+	}
 }
 
 .rectangle-1 {
@@ -190,18 +201,20 @@ main {
 
 .article-wrapper {
 	margin-top: 1rem;
-	button {
-		margin-top: 2.5rem;
-		width: 15rem;
-		height: 4.5rem;
-		background: $clr-orange 0% 0% no-repeat padding-box;
-		border-radius: 10px;
-		font: normal normal bold 1.25rem/1.25rem $font-stack;
-		letter-spacing: 0.4px;
+	padding: 0 2.25rem 0 2.25rem;
+}
 
-		border: 1px solid $clr-orange;
-		color: $clr-light;
-	}
+.read-more {
+	margin-top: 2.25rem;
+	width: 15rem;
+	height: 4.5rem;
+	background: $clr-orange 0% 0% no-repeat padding-box;
+	border-radius: 10px;
+	font: normal normal bold 1.25rem/1.25rem $font-stack;
+	letter-spacing: 0.4px;
+
+	border: 1px solid $clr-orange;
+	color: $clr-light;
 }
 
 .about-article {
@@ -216,7 +229,7 @@ main {
 	}
 
 	h2 {
-		font: normal normal normal 2.5rem/2.5rem $font-stack;
+		font: normal normal normal 1.5rem/1.5rem $font-stack;
 		letter-spacing: 0px;
 		padding: 1rem 0;
 	}
@@ -238,10 +251,12 @@ main {
 }
 
 .about-images {
-	height: calc((440px * 2) + 54px);
+	height: calc((363px * 2) + 54px);
+	padding: 0px 12px;
+
 	img {
-		width: 380px;
-		height: 440px;
+		width: 317px;
+		height: 363px;
 	}
 }
 
@@ -250,17 +265,20 @@ main {
 ///////////////////////////////////////////////////////////////////////////
 
 .classes {
-	margin-top: 6.25rem;
+	margin-top: 3rem;
 	margin-bottom: 6rem;
+	background: #222224 0% 0% no-repeat padding-box;
+	padding-left: 2.2rem;
+	padding-right: 2.2rem;
 
 	header {
-		height: 28rem;
-		background: #222224 0% 0% no-repeat padding-box;
+		overflow-y: hidden;
 
 		h3 {
-			font: normal normal normal 3.8rem/1.5rem $font-stack;
+			font: normal normal normal 3rem/1.5rem $font-stack;
 			color: $clr-light;
-			height: 5rem;
+			height: 4rem;
+			margin-top: 3rem;
 		}
 		.line-orange-hor {
 			@extend .line-orange;
@@ -317,7 +335,7 @@ main {
 	opacity: 1;
 
 	color: $clr-light;
-	font: normal normal normal 3.5rem/1.5rem $font-stack;
+	font: normal normal normal 1.5rem/1.5rem $font-stack;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -345,12 +363,119 @@ main {
 .teams {
 	h5 {
 		color: $clr-black;
-		font: normal normal normal 5.75rem/1.5rem $font-stack;
+		font: normal normal normal 2.8rem/1.5rem $font-stack;
 		letter-spacing: 0;
-		height: 5rem;
+		height: 4rem;
 	}
 
 	.line-orange {
-		width: 15%;
+		width: 25%;
+		margin: 0 auto 1.5rem auto;
 	}
+
+	p {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+		font-size: 1.25rem;
+		line-height: 3rem;
+
+		font-family: $font-stack;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+/////////////////////       #CONTACT          ////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+.contact {
+	padding-top: 4rem;
+	background-color: #181a1f;
+	padding-bottom: 6.5rem;
+
+	h5 {
+		color: $clr-light;
+		font: normal normal normal 2.8rem/1.5rem $font-stack;
+		letter-spacing: 0;
+		padding: 0.5rem 0 0.5rem 0;
+	}
+
+	.line-orange {
+		width: 33%;
+		margin: 1rem auto;
+	}
+
+	p {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+		font-size: 1.25rem;
+		line-height: 3rem;
+
+		font-family: $font-stack;
+	}
+
+	input {
+		border: 1px solid $clr-orange;
+		border-radius: 2px;
+		font: normal normal normal 1.25rem/1.5rem $font-stack;
+		color: $clr-light;
+		background-color: $clr-black;
+		height: 4rem;
+		width: 100%;
+	}
+
+	input::placeholder,
+	textarea::placeholder {
+		color: $clr-light;
+	}
+
+	input:focus,
+	textarea:focus {
+		background-color: $clr-black;
+		color: $clr-light;
+	}
+
+	textarea {
+		border: 1px solid $clr-orange;
+		border-radius: 2px;
+		font: normal normal normal 1.25rem/1.5rem $font-stack;
+		color: $clr-light;
+		background-color: $clr-black;
+		min-height: 8.25rem;
+		margin-top: 1.25rem;
+	}
+
+	button {
+		height: 4rem;
+		background: $clr-orange;
+		border: 1px solid $clr-orange;
+		border-radius: 10px;
+		color: $clr-light;
+		margin-top: 3rem;
+		width: 100%;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+/////////////////////       #FAQ          ////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+.faq {
+	padding-top: 3rem;
+	h5 {
+		color: $clr-black;
+		font: normal normal normal 2.8rem/1.5rem $font-stack;
+		letter-spacing: 0;
+		padding: 0.5rem 0 0.5rem 0;
+	}
+
+	.line-orange {
+		width: 25%;
+		margin: 1rem auto;
+	}
+}
+
+.accordion-button {
+	background-color: #ffffff;
+	border: 1px solid $clr-orange;
+	width: 100%;
 }

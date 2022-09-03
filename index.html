@@ -117,8 +117,8 @@
 				class="container-xl no-padding rectangle-section"
 				id="rectangle-section"
 			>
-				<div class="row rect-row">
-					<div class="col-md-6 col-lg-4">
+				<div class="row rect-row d-flex justify-content-around">
+					<div class="col-md-6 col-lg-4 no-padding">
 						<div class="rectangle-1">
 							<div class="rectangle-cap d-flex align-items-center flex-column">
 								<h5>Generate a domain</h5>
@@ -127,7 +127,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4">
+					<div class="col-md-6 col-lg-4 no-padding">
 						<div class="rectangle-2">
 							<div class="rectangle-cap d-flex align-items-center flex-column">
 								<h5>Generate a domain</h5>
@@ -136,7 +136,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4">
+					<div class="col-md-6 col-lg-4 no-padding">
 						<div class="rectangle-3">
 							<div class="rectangle-cap d-flex align-items-center flex-column">
 								<h5>Generate a domain</h5>
@@ -148,9 +148,11 @@
 				</div>
 			</section>
 			<section class="container-xl" id="about-us">
-				<div class="row d-flex flex-column flex-md-row justify-content-between">
+				<div class="row d-flex flex-column flex-md-row">
 					<div class="col-lg-7 article-wrapper">
-						<div class="d-flex flex-column about-article">
+						<div
+							class="d-flex flex-column justify-content-around about-article"
+						>
 							<h5>ABOUT US</h5>
 
 							<h2>Welcome to SAVYEVER</h2>
@@ -180,11 +182,11 @@
 								</p>
 							</article>
 						</div>
-						<button>Read More</button>
+						<button class="d-none d-lg-block read-more">Read More</button>
 					</div>
 					<div class="col-lg-4 about-sidebar">
 						<aside
-							class="about-images d-flex flex-column justify-content-between"
+							class="about-images d-flex flex-column justify-content-between align-items-center"
 						>
 							<img
 								src="./assets/desktop/Mask Group 18.png"
@@ -192,10 +194,15 @@
 							/>
 							<img src="./assets/desktop/Mask Group 6.png" alt="cable" />
 						</aside>
+						<div
+							class="d-block d-lg-none d-flex align-items-center justify-content-center"
+						>
+							<button class="read-more">Read More</button>
+						</div>
 					</div>
 				</div>
 			</section>
-			<section class="classes container-fluid no-padding" id="classes">
+			<section class="classes container-fluid" id="classes">
 				<header
 					class="d-flex flex-column justify-content-center align-items-center"
 				>
@@ -230,8 +237,171 @@
 				<div class="d-flex justify-content-center">
 					<h5>Meet Our Team</h5>
 				</div>
-				<div class="d-flex col-2 justify-content-center">
-					<hr class="line-orange" />
+
+				<hr class="line-orange" />
+				<p>
+					SAVYEVER continues to generate thousands of available business names
+					for our generator. Use our business name generator by industry and
+					find the name that is right for your business!
+				</p>
+			</section>
+			<section
+				id="contact"
+				class="contact container-fluid d-flex justify-content-center flex-column align-items-center"
+			>
+				<h5>Contact Us</h5>
+
+				<hr class="line-orange" />
+				<form class="d-flex flex-column w-75">
+					<div class="row d-flex">
+						<div class="col-lg-6">
+							<label for="name" class="form-label input-label"></label>
+							<input
+								type="text"
+								class="form-control"
+								id="name"
+								placeholder="Name"
+							/>
+						</div>
+						<div class="col-lg-6">
+							<label for="surname" class="form-label input-label"></label>
+							<input
+								type="text"
+								class="form-control"
+								id="surname"
+								placeholder="Surname"
+							/>
+						</div>
+					</div>
+					<div class="row d-flex">
+						<div class="col-lg-6">
+							<label for="telephone" class="form-label input-label"></label>
+							<input
+								type="tel"
+								class="form-control"
+								id="telephone"
+								placeholder="Telephone"
+							/>
+						</div>
+						<div class="col-lg-6">
+							<label for="email" class="form-label input-label"></label>
+							<input
+								type="email"
+								class="form-control"
+								id="email"
+								placeholder="Email"
+							/>
+						</div>
+					</div>
+					<div class="row d-flex">
+						<div>
+							<textarea
+								class="form-control"
+								id="textarea"
+								placeholder="Write your message here..."
+								rows="3"
+							></textarea>
+						</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-6">
+							<button type="submit">Submit</button>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section
+				id="faq"
+				class="container-xl faq d-flex justify-content-center flex-column align-items-center"
+			>
+				<h5>Faq's</h5>
+				<hr class="line-orange" />
+				<div w-100>
+					<div class="accordion accordion-flush" id="accordionFlushExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingOne">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseOne"
+									aria-expanded="false"
+									aria-controls="flush-collapseOne"
+								>
+									Accordion Item #1
+								</button>
+							</h2>
+							<div
+								id="flush-collapseOne"
+								class="accordion-collapse collapse"
+								aria-labelledby="flush-headingOne"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									Placeholder content for this accordion, which is intended to
+									demonstrate the <code>.accordion-flush</code> class. This is
+									the first item's accordion body.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingTwo">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseTwo"
+									aria-expanded="false"
+									aria-controls="flush-collapseTwo"
+								>
+									Accordion Item #2
+								</button>
+							</h2>
+							<div
+								id="flush-collapseTwo"
+								class="accordion-collapse collapse"
+								aria-labelledby="flush-headingTwo"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									Placeholder content for this accordion, which is intended to
+									demonstrate the <code>.accordion-flush</code> class. This is
+									the second item's accordion body. Let's imagine this being
+									filled with some actual content.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingThree">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseThree"
+									aria-expanded="false"
+									aria-controls="flush-collapseThree"
+								>
+									Accordion Item #3
+								</button>
+							</h2>
+							<div
+								id="flush-collapseThree"
+								class="accordion-collapse collapse"
+								aria-labelledby="flush-headingThree"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									Placeholder content for this accordion, which is intended to
+									demonstrate the <code>.accordion-flush</code> class. This is
+									the third item's accordion body. Nothing more exciting
+									happening here in terms of content, but just filling up the
+									space to make it look, at least at first glance, a bit more
+									representative of how this would look in a real-world
+									application.
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
