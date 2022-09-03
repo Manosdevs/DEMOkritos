@@ -6,9 +6,22 @@ $clr-orange: #ff6c2c;
 $clr-light: #ffffff;
 $font-stack: open-sans, sans-serif;
 
-ul {
-	padding: 0;
-	margin: 0;
+main {
+	overflow-x: hidden;
+}
+
+.line-orange {
+	margin: 1rem 0;
+
+	border: 1px solid $clr-orange;
+	opacity: 1;
+}
+
+.home-container {
+	margin-top: clamp(3.3rem, 4.5rem, 5.2rem);
+	//margin-bottom: clamp(1rem, calc(1rem + 0.33vh), 5.2rem);
+	height: clamp(8rem, 9rem, 11rem);
+	/* margin-left: clamp(2rem, 10vw, 192px); */
 }
 
 .no-padding {
@@ -19,24 +32,34 @@ ul {
 .logo {
 	width: 186px;
 	height: 19px;
-}
-
-#Home {
-	height: 174px;
+	padding-left: 12px;
 }
 
 .nav-list {
 	ul {
 		height: 24px;
+
+		padding: 0;
+		margin: 0;
 	}
 	li {
 		color: $clr-black;
-		font: normal normal bold 18px/29px $font-stack;
+		font-weight: bold;
+		font-size: 17px;
+		line-height: 29px;
+		font-family: $font-stack;
 		text-transform: capitalize;
-		text-align: left;
-		margin-left: 20px;
+		text-align: center;
+
+		letter-spacing: -0.09px;
 
 		height: 24px;
+	}
+
+	@media (max-width: 375px) {
+		li {
+			font-size: 15px;
+		}
 	}
 }
 
@@ -44,58 +67,52 @@ ul {
 /////////////////////       #CAROUSEL            ////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
-#carousel {
-	margin: 0 auto 40px auto;
+.carousel-container {
+	max-width: 1468px;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
 }
 
-.carousel-item > img {
-	margin: auto;
-	height: 45rem;
+.carousel-custom {
+	height: 100%;
+	min-height: 50vh;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-	opacity: $carousel-control-hover-opacity;
-}
-
-.carousel-control-prev {
-	justify-content: flex-start;
-	margin-left: 3.5%;
-}
-.carousel-control-next {
-	justify-content: flex-end;
-	margin-right: 3.5%;
-}
-
-.carousel-caption {
-	left: (100% - $carousel-caption-width) * 0.5;
-	top: 40%;
+.carousel-cap {
 	padding-top: 0;
 	padding-bottom: 0;
 	position: absolute;
-	max-height: 45rem;
+	top: 25%;
+	left: 10vw;
+
+	right: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 
 	text-align: left;
 
 	h5 {
-		font: normal normal normal 1.5rem/5.5rem $font-stack;
+		font: normal normal normal 1.25rem/3.5rem $font-stack;
 		letter-spacing: 0.5px;
 		color: $clr-light;
 		opacity: 0.75;
 		padding: 0;
-		margin: 0;
-		height: 2rem;
+		margin-bottom: 2rem;
+		height: 1.6rem;
+		width: 75%;
 	}
 
 	p {
-		font: normal normal normal 2.8rem/5.6rem $font-stack;
+		font: normal normal normal 1.5rem/2.25rem $font-stack;
 		text-transform: capitalize;
 		opacity: 1;
 		color: $clr-light;
+		width: 80%;
 
 		padding-top: 0.5rem;
 		height: 3.8rem;
-		width: fit-content;
 	}
 
 	button {
@@ -103,16 +120,15 @@ ul {
 		border-radius: 0.6rem;
 		color: $clr-light;
 		font: normal normal bold 1.25rem/1.25rem $font-stack;
-		width: 301px;
-		height: 92px;
+		width: 317px;
+		height: 72px;
 		text-align: center;
-		margin-top: 5.5rem;
+		margin-top: 3.5rem;
 		position: relative;
 
 		border: 1px solid $clr-orange;
 	}
 }
-
 ////////////////////////////////////////////////////////////////////////////
 /////////////////////       #RECTANGLES            ////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
@@ -133,8 +149,7 @@ ul {
 .rectangle-1 {
 	@extend .rectangle;
 
-	background: transparent url('/assets/desktop/Group\ 151.png') 0% 0% no-repeat
-		padding-box;
+	background-image: url('/assets/desktop/Group\ 151.png');
 }
 
 .rectangle-2 {
@@ -206,11 +221,10 @@ ul {
 		padding: 1rem 0;
 	}
 
-	.line-hor {
-		margin: 1rem 0;
+	.line-orange-hor {
+		@extend .line-orange;
+
 		width: 10.5rem;
-		border: 1px solid $clr-orange;
-		opacity: 1;
 	}
 
 	article {
@@ -236,22 +250,21 @@ ul {
 ///////////////////////////////////////////////////////////////////////////
 
 .classes {
-	background: #222224 0% 0% no-repeat padding-box;
 	margin-top: 6.25rem;
+	margin-bottom: 6rem;
 
 	header {
 		height: 28rem;
+		background: #222224 0% 0% no-repeat padding-box;
 
 		h3 {
 			font: normal normal normal 3.8rem/1.5rem $font-stack;
 			color: $clr-light;
 			height: 5rem;
 		}
-		hr {
+		.line-orange-hor {
+			@extend .line-orange;
 			width: 8rem;
-			border: 1px solid $clr-orange;
-			opacity: 1;
-			margin: 1rem 0;
 		}
 
 		p {
@@ -265,5 +278,79 @@ ul {
 }
 
 .class-rectangle {
+	margin: 0 !important;
+	padding: 0 !important;
+
 	height: 486px;
+
+	* {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	.class-rect-1 {
+		background-image: url('/assets/desktop/Mask\ Group\ 7.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.class-rect-2 {
+		background-image: url('/assets/desktop/Mask\ Group\ 8.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.class-rect-3 {
+		background-image: url('/assets/desktop/Mask\ Group\ 9.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.class-rect-4 {
+		background-image: url('/assets/desktop/Mask\ Group\ 10.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+.rect-cap {
+	height: 25%;
+	opacity: 1;
+
+	color: $clr-light;
+	font: normal normal normal 3.5rem/1.5rem $font-stack;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&-light {
+		@extend .rect-cap;
+		background: rgba(0, 0, 0, 0.58) 0% 0% no-repeat padding-box;
+	}
+
+	&-dark {
+		@extend .rect-cap;
+		background: rgba(19, 25, 26, 0.58) 0% 0% no-repeat padding-box;
+	}
+
+	h5 {
+		color: $clr-light;
+		font: normal normal normal 3.5rem/1.5rem $font-stack;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+/////////////////////       #TEAM          ////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+.teams {
+	h5 {
+		color: $clr-black;
+		font: normal normal normal 5.75rem/1.5rem $font-stack;
+		letter-spacing: 0;
+		height: 5rem;
+	}
+
+	.line-orange {
+		width: 15%;
+	}
 }

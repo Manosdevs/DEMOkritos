@@ -10,8 +10,10 @@
 	</head>
 	<body>
 		<main class="container-fluid no-padding">
-			<section class="container-lg">
-				<nav class="row align-items-center justify-content-between" id="Home">
+			<section id="Home" class="container-xl home-container">
+				<nav
+					class="row align-items-center justify-content-lg-around justify-content-sm-start"
+				>
 					<div class="col-xs-7 col-lg-2">
 						<h1>
 							<img
@@ -21,8 +23,8 @@
 							/>
 						</h1>
 					</div>
-					<div class="col-xs-12 col-lg-4 justify-content-center nav-list">
-						<ul class="list-unstyled d-flex">
+					<div class="row col-lg-4">
+						<ul class="list-unstyled d-flex justify-content-around nav-list">
 							<li>Home</li>
 							<li>About Us</li>
 							<li>Classes</li>
@@ -31,16 +33,16 @@
 					</div>
 				</nav>
 			</section>
-			<section id="carousel" class="row w-100">
+			<section id="carousel" class="carousel-container">
 				<div
-					id="carouselMain"
-					class="carousel slide no-padding"
-					data-bs-ride="false"
+					id="carouselExampleIndicators"
+					class="carousel slide"
+					data-bs-ride="true"
 				>
 					<div class="carousel-indicators">
 						<button
 							type="button"
-							data-bs-target="#carouselMain"
+							data-bs-target="#carouselExampleIndicators"
 							data-bs-slide-to="0"
 							class="active"
 							aria-current="true"
@@ -48,26 +50,25 @@
 						></button>
 						<button
 							type="button"
-							data-bs-target="#carouselMain"
+							data-bs-target="#carouselExampleIndicators"
 							data-bs-slide-to="1"
 							aria-label="Slide 2"
 						></button>
 						<button
 							type="button"
-							data-bs-target="#carouselMain"
+							data-bs-target="#carouselExampleIndicators"
 							data-bs-slide-to="2"
 							aria-label="Slide 3"
 						></button>
 					</div>
 					<div class="carousel-inner">
-						<div class="carousel-item active" data-bs-interval="4000">
+						<div class="carousel-item active">
 							<img
-								src="/assets/desktop/Group 169.png"
-								class="d-block w-100"
-								alt="carouselcity1"
-								id="carouselcity1"
+								src="./assets/desktop/Group 169.png"
+								class="d-block w-100 carousel-custom"
+								alt="..."
 							/>
-							<div class="carousel-caption d-none d-md-block">
+							<div class="carousel-cap">
 								<h5 class="carousel-head text-nowrap col-3">
 									BUYING A DOMAIN NAME
 								</h5>
@@ -77,63 +78,43 @@
 								<button class="btn-carousel col-3">Get Started</button>
 							</div>
 						</div>
-						<div class="carousel-item" data-bs-interval="5000">
+						<div class="carousel-item">
 							<img
-								src="/assets/desktop/Group 169.png"
-								class="d-block w-100"
-								alt="carouselcity2"
-								id="carouselcity2"
+								src="./assets/desktop/Group 169.png"
+								class="d-block w-100 carousel-custom"
+								alt="..."
 							/>
-							<div class="carousel-caption d-none d-md-block">
-								<h5 class="carousel-head text-nowrap col-3">
-									BUYING A DOMAIN NAME
-								</h5>
-								<p class="carousel-par col-9">
-									Each name comes with the .Com Address
-								</p>
-								<button class="btn-carousel col-3">Get Started</button>
-							</div>
 						</div>
-						<div class="carousel-item" data-bs-interval="5000">
+						<div class="carousel-item">
 							<img
-								src="/assets/desktop/Group 169.png"
-								class="d-block w-100"
-								alt="carouselcity3"
-								id="carouselcity3"
+								src="./assets/desktop/Group 169.png"
+								class="d-block w-100 carousel-custom"
+								alt="..."
 							/>
-							<div class="carousel-caption d-none d-md-block">
-								<h5 class="carousel-head text-nowrap col-3">
-									BUYING A DOMAIN NAME
-								</h5>
-								<p class="carousel-par col-9">
-									Each name comes with the .Com Address
-								</p>
-								<button class="btn-carousel col-3">Get Started</button>
-							</div>
 						</div>
 					</div>
 					<button
-						class="carousel-control-prev"
+						class="carousel-control-prev d-md-block d-none"
 						type="button"
-						data-bs-target="#carouselMain"
+						data-bs-target="#carouselExampleIndicators"
 						data-bs-slide="prev"
 					>
-						<img src="./assets/desktop/chevron-left.png" />
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						<span class="visually-hidden">Previous</span>
 					</button>
 					<button
-						class="carousel-control-next"
+						class="carousel-control-next d-md-block d-none"
 						type="button"
-						data-bs-target="#carouselMain"
+						data-bs-target="#carouselExampleIndicators"
 						data-bs-slide="next"
 					>
-						<img src="./assets/desktop/chevron-left-1.png" aria-hidden="true" />
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="visually-hidden">Next</span>
 					</button>
 				</div>
 			</section>
 			<section
-				class="container-lg no-padding rectangle-section"
+				class="container-xl no-padding rectangle-section"
 				id="rectangle-section"
 			>
 				<div class="row rect-row">
@@ -166,14 +147,14 @@
 					</div>
 				</div>
 			</section>
-			<section class="container-lg" id="about-us">
+			<section class="container-xl" id="about-us">
 				<div class="row d-flex flex-column flex-md-row justify-content-between">
 					<div class="col-lg-7 article-wrapper">
 						<div class="d-flex flex-column about-article">
 							<h5>ABOUT US</h5>
 
 							<h2>Welcome to SAVYEVER</h2>
-							<hr class="line-hor" />
+							<hr class="line-orange-hor" />
 
 							<article
 								class="justify-content-around d-flex flex-column text-sm-center text-lg-start"
@@ -214,45 +195,43 @@
 					</div>
 				</div>
 			</section>
-			<section class="classes" id="classes">
+			<section class="classes container-fluid no-padding" id="classes">
 				<header
 					class="d-flex flex-column justify-content-center align-items-center"
 				>
 					<h3>Our Classes</h3>
-					<hr />
+					<hr class="line-orange-hor" />
 					<p>
 						They have been highlighted on our site because of their brandable
 						qualities, which will make an impression on the audience you're
 						trying to reach.
 					</p>
 				</header>
-				<div class="d-flex w-100 justify-content-between class-rectangle">
-					<div class="w-50">
-						<img
-							class="w-100 img-fluid"
-							src="./assets/desktop/Mask Group 7.png"
-						/>
+				<div class="row class-rectangle">
+					<div class="class-rect-1 col-lg-6 d-flex flex-column-reverse">
+						<div class="rect-cap-dark">Effective names</div>
 					</div>
-					<div class="w-50">
-						<img
-							class="w-100 img-fluid"
-							src="./assets/desktop/Mask Group 8.png"
-						/>
+
+					<div class="class-rect-2 col-lg-6 d-flex flex-column-reverse">
+						<div class="rect-cap-light">Industry finest</div>
 					</div>
 				</div>
-				<div class="d-flex w-100 justify-content-between class-rectangle">
-					<div class="w-50">
-						<img
-							class="w-100 img-fluid"
-							src="./assets/desktop/Mask Group 9.png"
-						/>
+				<div class="row class-rectangle">
+					<div class="class-rect-3 col-lg-6 d-flex flex-column-reverse">
+						<div class="rect-cap-dark">Popular domains</div>
 					</div>
-					<div class="w-50">
-						<img
-							class="w-100 img-fluid"
-							src="./assets/desktop/Mask Group 10.png"
-						/>
+
+					<div class="class-rect-4 col-lg-6 d-flex flex-column-reverse">
+						<div class="rect-cap-light">Short domains</div>
 					</div>
+				</div>
+			</section>
+			<section id="team" class="teams container-xl">
+				<div class="d-flex justify-content-center">
+					<h5>Meet Our Team</h5>
+				</div>
+				<div class="d-flex col-2 justify-content-center">
+					<hr class="line-orange" />
 				</div>
 			</section>
 		</main>

@@ -9,6 +9,6 @@
   "author": "Emmanouil Arvanitis",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^5.2.0"
+    "bootstrap": "5.0"
   }
 }
