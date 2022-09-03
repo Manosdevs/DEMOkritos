@@ -173,16 +173,97 @@ ul {
 /////////////////////       #ABOUT US            ////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
+.article-wrapper {
+	margin-top: 1rem;
+	button {
+		margin-top: 2.5rem;
+		width: 15rem;
+		height: 4.5rem;
+		background: $clr-orange 0% 0% no-repeat padding-box;
+		border-radius: 10px;
+		font: normal normal bold 1.25rem/1.25rem $font-stack;
+		letter-spacing: 0.4px;
+
+		border: 1px solid $clr-orange;
+		color: $clr-light;
+	}
+}
+
 .about-article {
 	width: fit-content;
-	font: normal normal bold 1rem/1.5rem $font-stack;
-	letter-spacing: 6px;
-	color: #292f39;
+	padding-bottom: 2rem;
+
+	h5 {
+		font: normal normal bold 1rem/1.5rem $font-stack;
+		letter-spacing: 6px;
+		color: #292f39;
+		margin-bottom: 1rem;
+	}
+
+	h2 {
+		font: normal normal normal 2.5rem/2.5rem $font-stack;
+		letter-spacing: 0px;
+		padding: 1rem 0;
+	}
+
+	.line-hor {
+		margin: 1rem 0;
+		width: 10.5rem;
+		border: 1px solid $clr-orange;
+		opacity: 1;
+	}
+
+	article {
+		margin-top: 1.5rem;
+		color: $clr-black;
+		text-align: left;
+		font: normal normal normal 1.25rem/2.8rem $font-stack;
+		letter-spacing: 0px;
+		min-height: 38rem;
+	}
 }
 
 .about-images {
+	height: calc((440px * 2) + 54px);
 	img {
 		width: 380px;
 		height: 440px;
 	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+/////////////////////       #CLASSES           ////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+.classes {
+	background: #222224 0% 0% no-repeat padding-box;
+	margin-top: 6.25rem;
+
+	header {
+		height: 28rem;
+
+		h3 {
+			font: normal normal normal 3.8rem/1.5rem $font-stack;
+			color: $clr-light;
+			height: 5rem;
+		}
+		hr {
+			width: 8rem;
+			border: 1px solid $clr-orange;
+			opacity: 1;
+			margin: 1rem 0;
+		}
+
+		p {
+			text-align: center;
+			font: normal normal normal 1.25rem/3rem $font-stack;
+			letter-spacing: 0px;
+			color: $clr-light;
+			width: 80%;
+		}
+	}
+}
+
+.class-rectangle {
+	height: 486px;
 }
