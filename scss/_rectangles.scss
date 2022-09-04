@@ -1,0 +1,53 @@
+.rectangle-section {
+	margin-bottom: 5rem;
+	margin-top: 3rem;
+}
+
+.rectangle {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	height: 283px;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.rectangle-1 {
+	@extend .rectangle;
+
+	background-image: url('/assets/desktop/Group\ 151.png');
+}
+
+.rectangle-2 {
+	@extend .rectangle;
+
+	background-image: url('/assets/desktop/Group\ 152.png');
+}
+.rectangle-3 {
+	@extend .rectangle;
+	background-image: url('/assets/desktop/Group\ 153.png');
+}
+
+.rectangle-cap {
+	color: $clr-light;
+	margin-bottom: 2.5rem;
+
+	h5 {
+		font: normal normal normal 1.5rem/1.5rem $font-stack;
+	}
+
+	h6 {
+		font: normal normal normal 1.1rem/1.5rem $font-stack;
+	}
+
+	button {
+		background: #7c7c79 0% 0% no-repeat padding-box;
+		color: $clr-light;
+		width: 137px;
+		height: 39px;
+		border: 1px solid #7c7c79;
+		margin-top: 2rem;
+	}
+}

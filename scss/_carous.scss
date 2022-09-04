@@ -1,0 +1,74 @@
+.carousel-container {
+	max-width: 1468px;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+//changing bootstrap class to make indicator orange
+.carousel-indicators {
+	.active {
+		background-color: $clr-orange;
+	}
+}
+
+.carousel-custom {
+	height: 100%;
+	min-height: 50vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	opacity: 1;
+}
+
+.carousel-cap {
+	padding-top: 0;
+	padding-bottom: 0;
+	position: absolute;
+	top: 25%;
+	left: 10vw;
+
+	right: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	text-align: left;
+
+	h5 {
+		font: normal normal normal 1.25rem/3.5rem $font-stack;
+		letter-spacing: 0.5px;
+		color: $clr-light;
+		opacity: 0.75;
+		padding: 0;
+		margin-bottom: 2rem;
+		height: 1.6rem;
+		width: 75%;
+	}
+
+	p {
+		font: normal normal normal 1.5rem/2.25rem $font-stack;
+		text-transform: capitalize;
+		opacity: 1;
+		color: $clr-light;
+		width: 80%;
+
+		padding-top: 0.5rem;
+		height: 3.8rem;
+	}
+
+	button {
+		background: $clr-orange 0% 0% no-repeat padding-box;
+		border-radius: 0.6rem;
+		color: $clr-light;
+		font: normal normal bold 1.25rem/1.25rem $font-stack;
+		width: 20rem;
+		height: 4.5rem;
+		text-align: center;
+		margin-top: 3.5rem;
+		position: relative;
+
+		border: 1px solid $clr-orange;
+	}
+}

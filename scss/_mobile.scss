@@ -1,0 +1,101 @@
+//this is just for 2 old phones with small sizes but might as well
+@media (max-width: 375px) {
+	.carousel-cap {
+		button {
+			width: 10rem;
+			height: 2.5rem;
+			font: normal normal bold 1rem/1rem $font-stack;
+			margin-top: 2.5rem;
+		}
+	}
+}
+
+//desktop
+
+@media (min-width: 39rem) {
+	//Home
+	.home-container {
+		padding-bottom: 4rem;
+	}
+
+	//Carousel
+	.carousel-cap {
+		top: 40%;
+		h5 {
+			font-size: 1.5rem;
+			line-height: 4rem;
+			height: 2rem;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			font-size: 2.8rem;
+			line-height: 4rem;
+		}
+
+		button {
+			width: 200px;
+			height: 60px;
+		}
+	}
+	//rectangles
+
+	.rectangle-section {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.rect-row {
+		gap: 0.5rem;
+
+		.col-lg-4 {
+			width: 388px;
+		}
+	}
+
+	///About us
+
+	.about-images {
+		height: calc((438px * 2) + 54px);
+
+		img {
+			width: 380px;
+			height: 438px;
+		}
+	}
+
+	//Classes
+
+	.class-rectangle {
+		padding: 0;
+		justify-content: center;
+	}
+
+	//teams
+	.teams {
+		.line-orange {
+			width: 8%;
+		}
+	}
+
+	.contact {
+		.line-orange {
+			width: 8%;
+		}
+	}
+
+	.faq {
+		.line-orange {
+			width: 8%;
+		}
+	}
+}
+
+@media (min-width: 900px) {
+	.carousel-cap {
+		button {
+			width: 301px;
+			height: 92px;
+		}
+	}
+}

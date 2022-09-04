@@ -1,0 +1,72 @@
+.contact {
+	padding-top: 4rem;
+	background-color: #181a1f;
+	padding-bottom: 6.5rem;
+
+	.row {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	h5 {
+		color: $clr-light;
+		font: normal normal normal 2.8rem/1.5rem $font-stack;
+		letter-spacing: 0;
+		padding: 0.5rem 0 0.5rem 0;
+	}
+
+	.line-orange {
+		width: 27%;
+		margin: 1rem auto;
+	}
+
+	p {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+		font-size: 1.25rem;
+		line-height: 3rem;
+
+		font-family: $font-stack;
+	}
+
+	input {
+		border: 1px solid $clr-orange;
+		border-radius: 2px;
+		font: normal normal normal 1.25rem/1.5rem $font-stack;
+		color: $clr-light;
+		background-color: $clr-black;
+		height: 4rem;
+		width: 100%;
+	}
+
+	input::placeholder,
+	textarea::placeholder {
+		color: $clr-light;
+	}
+
+	input:focus,
+	textarea:focus {
+		background-color: $clr-black;
+		color: $clr-light;
+	}
+
+	textarea {
+		border: 1px solid $clr-orange;
+		border-radius: 2px;
+		font: normal normal normal 1.25rem/1.5rem $font-stack;
+		color: $clr-light;
+		background-color: $clr-black;
+		min-height: 8.25rem;
+		margin-top: 1.25rem;
+	}
+
+	button {
+		height: 4rem;
+		background: $clr-orange;
+		border: 1px solid $clr-orange;
+		border-radius: 10px;
+		color: $clr-light;
+		margin-top: 3rem;
+		width: 100%;
+	}
+}

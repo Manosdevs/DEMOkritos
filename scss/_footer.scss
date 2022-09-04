@@ -1,0 +1,33 @@
+.footer {
+	background-color: $clr-black;
+
+	.logo {
+		padding: 1.5rem 2.25rem;
+	}
+
+	.link-list {
+		padding: 1.5rem 2.25rem;
+
+		ul {
+			gap: 0.75rem;
+		}
+	}
+
+	.orange-space {
+		height: 59px;
+		width: 100%;
+		background-color: $clr-orange;
+		margin: 0 !important;
+	}
+
+	.copyright {
+		font-family: $font-stack;
+		font-size: 1rem;
+		line-height: 1.5rem;
+		letter-spacing: 0.75px;
+
+		color: $clr-light;
+		text-align: center;
+		padding: 2rem;
+	}
+}

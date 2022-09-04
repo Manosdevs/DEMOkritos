@@ -7,10 +7,11 @@
 		<title>Document</title>
 		<link rel="stylesheet" href="/css/style.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/rfb8yzk.css" />
+		<script src="./javascript/script.js" defer></script>
 	</head>
 	<body>
-		<main class="container-fluid no-padding">
-			<section id="Home" class="container-xl home-container">
+		<main class="container-xl no-padding">
+			<section id="home" class="container-xl home-container">
 				<nav
 					class="row align-items-center justify-content-lg-around justify-content-sm-start"
 				>
@@ -24,7 +25,10 @@
 						</h1>
 					</div>
 					<div class="row col-lg-4">
-						<ul class="list-unstyled d-flex justify-content-around nav-list">
+						<ul
+							id="nav-list"
+							class="list-unstyled d-flex justify-content-around nav-list"
+						>
 							<li>Home</li>
 							<li>About Us</li>
 							<li>Classes</li>
@@ -37,7 +41,7 @@
 				<div
 					id="carouselExampleIndicators"
 					class="carousel slide"
-					data-bs-ride="true"
+					data-bs-ride="carousel"
 				>
 					<div class="carousel-indicators">
 						<button
@@ -62,7 +66,7 @@
 						></button>
 					</div>
 					<div class="carousel-inner">
-						<div class="carousel-item active">
+						<div class="carousel-item active" data-bs-interval="6000">
 							<img
 								src="./assets/desktop/Group 169.png"
 								class="d-block w-100 carousel-custom"
@@ -78,7 +82,7 @@
 								<button class="btn-carousel col-3">Get Started</button>
 							</div>
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item" data-bs-interval="6000">
 							<img
 								src="./assets/desktop/Group 169.png"
 								class="d-block w-100 carousel-custom"
@@ -94,7 +98,7 @@
 								<button class="btn-carousel col-3">Get Started #2</button>
 							</div>
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item" data-bs-interval="6000">
 							<img
 								src="./assets/desktop/Group 169.png"
 								class="d-block w-100 carousel-custom"
@@ -112,64 +116,76 @@
 						</div>
 					</div>
 					<button
-						class="carousel-control-prev d-md-block d-none"
+						id="car-prev"
+						class="carousel-control-prev d-lg-block d-none"
 						type="button"
 						data-bs-target="#carouselExampleIndicators"
 						data-bs-slide="prev"
 					>
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<img
+							src="/assets/desktop/chevron-left.png"
+							alt="next-button"
+							aria-hidden="true"
+						/>
 						<span class="visually-hidden">Previous</span>
 					</button>
 					<button
-						class="carousel-control-next d-md-block d-none"
+						id="car-next"
+						class="carousel-control-next d-lg-block d-none"
 						type="button"
 						data-bs-target="#carouselExampleIndicators"
 						data-bs-slide="next"
 					>
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<img
+							src="/assets/desktop/chevron-left-1.png"
+							alt="next-button"
+							aria-hidden="true"
+						/>
 						<span class="visually-hidden">Next</span>
 					</button>
 				</div>
 			</section>
 			<section
 				id="rectangle-section"
-				class="container-xl no-padding rectangle-section"
+				class="container-xl rectangle-section no-padding"
 			>
-				<div class="row rect-row d-flex justify-content-around">
-					<div class="col-md-6 col-lg-4 no-padding">
+				<div
+					class="row rect-row d-flex justify-content-center align-items-center"
+				>
+					<div class="col-md-10 col-lg-4 no-padding">
 						<div class="rectangle-1">
 							<div class="rectangle-cap d-flex align-items-center flex-column">
 								<h5>Generate a domain</h5>
 								<h6>Use a computer</h6>
-								<button>$60/M</button>
+								<button>$60*/M</button>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4 no-padding">
+					<div class="col-md-10 col-lg-4 no-padding">
 						<div class="rectangle-2">
 							<div class="rectangle-cap d-flex align-items-center flex-column">
 								<h5>Carefully selected domain</h5>
 								<h6>for each business</h6>
-								<button>$120/M</button>
+								<button>$120*/M</button>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4 no-padding">
+					<div class="col-md-10 col-lg-4 no-padding">
 						<div class="rectangle-3">
 							<div class="rectangle-cap d-flex align-items-center flex-column">
 								<h5>Unique business domain</h5>
 								<h6>made for you</h6>
-								<button>$200/M</button>
+								<button>$200*/M</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="about-us" class="container-xl">
-				<div class="row d-flex flex-column flex-md-row">
+			<section id="aboutus" class="container-xl">
+				<div class="row d-flex flex-column flex-md-row justify-content-around">
 					<div class="col-lg-7 article-wrapper">
 						<div
-							class="d-flex flex-column justify-content-around about-article"
+							class="d-flex flex-column align-items-md-center align-items-lg-start justify-content-around about-article"
 						>
 							<h5>ABOUT US</h5>
 
@@ -220,7 +236,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="classes" class="classes container-fluid no-padding">
+			<section id="classes" class="classes container-xl no-padding">
 				<header
 					class="d-flex flex-column justify-content-center align-items-center"
 				>
@@ -233,20 +249,28 @@
 					</p>
 				</header>
 				<div class="row class-rectangle">
-					<div class="class-rect-1 col-lg-6 d-flex flex-column-reverse">
+					<div
+						class="class-rect-1 col-md-8 col-lg-6 d-flex flex-column-reverse"
+					>
 						<div class="rect-cap-dark"><h5>Effective names</h5></div>
 					</div>
 
-					<div class="class-rect-2 col-lg-6 d-flex flex-column-reverse">
+					<div
+						class="class-rect-2 col-md-8 col-lg-6 d-flex flex-column-reverse"
+					>
 						<div class="rect-cap-light"><h5>Industry Finest</h5></div>
 					</div>
 				</div>
 				<div class="row class-rectangle">
-					<div class="class-rect-3 col-lg-6 d-flex flex-column-reverse">
+					<div
+						class="class-rect-3 col-md-8 col-lg-6 d-flex flex-column-reverse"
+					>
 						<div class="rect-cap-dark"><h5>Popular domains</h5></div>
 					</div>
 
-					<div class="class-rect-4 col-lg-6 d-flex flex-column-reverse">
+					<div
+						class="class-rect-4 col-md-8 col-lg-6 d-flex flex-column-reverse"
+					>
 						<div class="rect-cap-light"><h5>Short domains</h5></div>
 					</div>
 				</div>
@@ -262,15 +286,103 @@
 					for our generator. Use our business name generator by industry and
 					find the name that is right for your business!
 				</p>
+				<div class="row d-none d-lg-flex justify-content-center team-carousel">
+					<button class="next">
+						<img src="./assets/desktop/ios-arrow-forward.png" />
+					</button>
+					<button class="prev">
+						<img src="./assets/desktop/ios-arrow-forward.png" />
+					</button>
+					<ul class="carousel-list d-flex w-75">
+						<li class="team-item d-flex w-100">
+							<div class="card">
+								<img
+									src="./assets/desktop/Mask Group 11.png"
+									class="card-img-top"
+								/>
+								<div
+									class="card-body-custom d-flex align-items-center justify-content-center"
+								>
+									<p class="card-text">George Jones</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<img
+									src="./assets/desktop/Mask Group 12.png"
+									alt="Lynn Taylor"
+									class="card-img-top"
+								/>
+								<div
+									class="card-body-custom d-flex align-items-center justify-content-center"
+								>
+									<p class="card-text">Lynn Taylor</p>
+								</div>
+							</div>
+						</li>
+						<li class="team-item d-flex w-100">
+							<div class="card">
+								<img
+									src="./assets/desktop/Mask Group 12.png"
+									alt="Lynn Taylor"
+									class="card-img-top"
+								/>
+								<div
+									class="card-body-custom d-flex align-items-center justify-content-center"
+								>
+									<p class="card-text">Tynn Laylor</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<img
+									src="./assets/desktop/Mask Group 11.png"
+									class="card-img-top"
+								/>
+								<div
+									class="card-body-custom d-flex align-items-center justify-content-center"
+								>
+									<p class="card-text">Jeorge Gones</p>
+								</div>
+							</div>
+						</li>
+						<li class="team-item d-flex w-100">
+							<div class="card">
+								<img
+									src="./assets/desktop/Mask Group 11.png"
+									class="card-img-top"
+								/>
+								<div
+									class="card-body-custom d-flex align-items-center justify-content-center"
+								>
+									<p class="card-text">Egroeg Senoj</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<img
+									src="./assets/desktop/Mask Group 12.png"
+									alt="Lynn Taylor"
+									class="card-img-top"
+								/>
+								<div
+									class="card-body-custom d-flex align-items-center justify-content-center"
+								>
+									<p class="card-text">Nnyl Rolayt</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</section>
 			<section
 				id="contact"
-				class="contact container-fluid d-flex justify-content-center flex-column align-items-center"
+				class="contact container-xl d-flex justify-content-center flex-column align-items-center"
 			>
 				<h5>Contact Us</h5>
 
 				<hr class="line-orange" />
-				<form class="d-flex flex-column w-75">
+				<form class="d-flex flex-column w-100">
 					<div class="row d-flex">
 						<div class="col-lg-6">
 							<label for="name" class="form-label input-label"></label>
@@ -423,7 +535,7 @@
 					</div>
 				</div>
 			</section>
-			<footer class="container-fluid no-padding footer">
+			<footer class="container-xl no-padding footer">
 				<div class="row d-flex justify-content-md-around">
 					<div class="col-md-2 logo">
 						<img src="./assets/desktop/Group 159.png" />
