@@ -18,9 +18,10 @@ main {
 }
 
 .home-container {
-	margin-top: clamp(3.3rem, 4.5rem, 5.2rem);
+	padding-top: 3.5rem;
+	padding-bottom: 1rem;
 	//margin-bottom: clamp(1rem, calc(1rem + 0.33vh), 5.2rem);
-	height: clamp(8rem, 9rem, 11rem);
+
 	/* margin-left: clamp(2rem, 10vw, 192px); */
 }
 
@@ -32,7 +33,7 @@ main {
 .logo {
 	width: 186px;
 	height: 19px;
-	padding-left: 12px;
+	padding-left: 0.75rem;
 }
 
 .nav-list {
@@ -148,7 +149,7 @@ main {
 	justify-content: center;
 	height: 283px;
 	width: 100%;
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 @media (min-width: 40rem) {
@@ -296,16 +297,10 @@ main {
 }
 
 .class-rectangle {
-	margin: 0 !important;
-	padding: 0 !important;
-
 	height: 486px;
-
 	* {
 		padding: 0 !important;
-		margin: 0 !important;
 	}
-
 	.class-rect-1 {
 		background-image: url('/assets/desktop/Mask\ Group\ 7.png');
 		background-repeat: no-repeat;
@@ -334,25 +329,28 @@ main {
 	height: 25%;
 	opacity: 1;
 
-	color: $clr-light;
-	font: normal normal normal 1.5rem/1.5rem $font-stack;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 
 	&-light {
 		@extend .rect-cap;
 		background: rgba(0, 0, 0, 0.58) 0% 0% no-repeat padding-box;
+		h5 {
+			color: $clr-light;
+			font: normal normal normal 1.5rem/1.5rem $font-stack;
+			margin-left: 2rem;
+		}
 	}
 
 	&-dark {
 		@extend .rect-cap;
 		background: rgba(19, 25, 26, 0.58) 0% 0% no-repeat padding-box;
-	}
-
-	h5 {
-		color: $clr-light;
-		font: normal normal normal 3.5rem/1.5rem $font-stack;
+		h5 {
+			color: $clr-light;
+			font: normal normal normal 1.5rem/1.5rem $font-stack;
+			margin-left: 2rem;
+		}
 	}
 }
 
@@ -461,6 +459,7 @@ main {
 
 .faq {
 	padding-top: 3rem;
+	padding-bottom: 5.5rem;
 	h5 {
 		color: $clr-black;
 		font: normal normal normal 2.8rem/1.5rem $font-stack;
@@ -491,4 +490,42 @@ main {
 .accordion-item {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+}
+
+////////////////////////////////////////////////////////////////////////////
+/////////////////////       #Footer         ////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+.footer {
+	background-color: $clr-black;
+
+	.logo {
+		padding: 1.5rem 2.25rem;
+	}
+
+	.link-list {
+		padding: 1.5rem 2.25rem;
+
+		ul {
+			gap: 0.75rem;
+		}
+	}
+
+	.orange-space {
+		height: 59px;
+		width: 100%;
+		background-color: $clr-orange;
+		margin: 0 !important;
+	}
+
+	.copyright {
+		font-family: $font-stack;
+		font-size: 1rem;
+		line-height: 1.5rem;
+		letter-spacing: 0.75px;
+
+		color: $clr-light;
+		text-align: center;
+		padding: 2rem;
+	}
 }

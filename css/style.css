@@ -11510,8 +11510,8 @@ main {
 }
 
 .home-container {
-  margin-top: clamp(3.3rem, 4.5rem, 5.2rem);
-  height: clamp(8rem, 9rem, 11rem);
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
   /* margin-left: clamp(2rem, 10vw, 192px); */
 }
 
@@ -11523,7 +11523,7 @@ main {
 .logo {
   width: 186px;
   height: 19px;
-  padding-left: 12px;
+  padding-left: 0.75rem;
 }
 
 .nav-list ul {
@@ -11636,7 +11636,7 @@ main {
           justify-content: center;
   height: 283px;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 40rem) {
@@ -11771,14 +11771,11 @@ main {
 }
 
 .class-rectangle {
-  margin: 0 !important;
-  padding: 0 !important;
   height: 486px;
 }
 
 .class-rectangle * {
   padding: 0 !important;
-  margin: 0 !important;
 }
 
 .class-rectangle .class-rect-1 {
@@ -11808,30 +11805,35 @@ main {
 .rect-cap, .rect-cap-light, .rect-cap-dark {
   height: 25%;
   opacity: 1;
-  color: #ffffff;
-  font: normal normal normal 1.5rem/1.5rem open-sans, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .rect-cap-light {
   background: rgba(0, 0, 0, 0.58) 0% 0% no-repeat padding-box;
 }
 
+.rect-cap-light h5, .rect-cap-light .h5 {
+  color: #ffffff;
+  font: normal normal normal 1.5rem/1.5rem open-sans, sans-serif;
+  margin-left: 2rem;
+}
+
 .rect-cap-dark {
   background: rgba(19, 25, 26, 0.58) 0% 0% no-repeat padding-box;
 }
 
-.rect-cap h5, .rect-cap-light h5, .rect-cap-dark h5, .rect-cap .h5, .rect-cap-light .h5, .rect-cap-dark .h5 {
+.rect-cap-dark h5, .rect-cap-dark .h5 {
   color: #ffffff;
-  font: normal normal normal 3.5rem/1.5rem open-sans, sans-serif;
+  font: normal normal normal 1.5rem/1.5rem open-sans, sans-serif;
+  margin-left: 2rem;
 }
 
 .teams h5, .teams .h5 {
@@ -11938,6 +11940,7 @@ main {
 
 .faq {
   padding-top: 3rem;
+  padding-bottom: 5.5rem;
 }
 
 .faq h5, .faq .h5 {
@@ -11970,5 +11973,38 @@ main {
 .accordion-item {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: #181a1f;
+}
+
+.footer .logo {
+  padding: 1.5rem 2.25rem;
+}
+
+.footer .link-list {
+  padding: 1.5rem 2.25rem;
+}
+
+.footer .link-list ul {
+  gap: 0.75rem;
+}
+
+.footer .orange-space {
+  height: 59px;
+  width: 100%;
+  background-color: #ff6c2c;
+  margin: 0 !important;
+}
+
+.footer .copyright {
+  font-family: open-sans, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.75px;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
