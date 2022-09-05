@@ -1,0 +1,10 @@
+This is a short documentation regarding the demo
+
+- The site is fully responsive, tested on all devices and widths in Firefox and Chrome.
+- I used Bootstrap and a lot of custom sass.
+- I hate the Bootstrap carousel.
+- I added a few extra styles, namely a gradient background for the nav buttons and a few shadows.
+- I couldn't find anything similar to the meet-our-team slider in bootstrap, so I made one myself.
+  - I used javascript to create an array out of the list items, then used ScrollIntoView to scroll to the element horizontally
+  - It would work on mobile as a normal slider, no need for javascript but I wanted to stay close to the given design.
+  - There is a bug where if you scroll to an element, then refresh the browser the variable that stores the index doesn't reset to 0.
