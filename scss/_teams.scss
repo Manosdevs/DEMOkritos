@@ -23,6 +23,13 @@
 
 	.team-carousel {
 		position: relative;
+		::-webkit-scrollbar {
+			display: none;
+		}
+
+		* {
+			scrollbar-width: none;
+		}
 		.carousel-list {
 			display: flex;
 			overflow-x: auto;
