@@ -1,4 +1,4 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../bootstrap/scss/bootstrap.scss';
 
 /* Colors: */
 $clr-black: #181a1f;
@@ -8,6 +8,7 @@ $font-stack: open-sans, sans-serif;
 
 main {
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 .line-orange {

@@ -11501,6 +11501,7 @@ fieldset:disabled .btn {
 /* Colors: */
 main {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .line-orange, .classes header .line-orange-hor, .about-article .line-orange-hor {
